@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LostnFound - Campus Lost & Found App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#installation">Install Guide</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+        </ul>
+    </nav>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
+    </button>
+
+    <!-- Hero Section -->
+    <section id="hero" class="screen">
+        <div class="hero-content">
+            <h1 class="app-title">LostnFound</h1>
+            <p class="hero-subtitle">Your Campus Lost & Found Solution</p>
+            <!-- <a href="files/LostnFound.apk" class="download-btn">Download APK</a> -->
+            <a href="https://limewire.com/d/cgZ4o?fbclid=IwY2xjawN6W_BleHRuA2FlbQIxMABicmlkETEyVUJCRGhvZDFmSWFVZVZ3c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHs_AYamg7nkbKB8a32h8_gvQYoNdfcTz1-dJaVBurQncQpJXQAMSMZA6Q_KT_aem_pilK7wPDTVZ2w-teh1CPew#huEijsURDZ"
+                class="download-btn">Download APK</a>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="screen">
+        <div class="about-content">
+            <div class="icon-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/1048/1048950.png" alt="Lost and Found Icon"
+                    class="about-icon">
+            </div>
+            <h2>What is LostnFound?</h2>
+            <p>LostnFound is your go-to solution for managing lost and found items on campus. Our app helps students
+                quickly report lost items and return found belongings, creating a more connected and caring campus
+                community.</p>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screen">
+        <h2>App Screenshots</h2>
+        <div class="screenshot-container">
+            <div class="screenshot-carousel">
+                <div class="screenshot">
+                    <img src="img/app/1.jpg" alt="App Home Screen">
+                </div>
+                <div class="screenshot">
+                    <img src="img/app/2.jpg" alt="Lost Items Screen">
+                </div>
+                <div class="screenshot">
+                    <img src="img/app/3.jpg" alt="Found Items Screen">
+                </div>
+                <div class="screenshot">
+                    <img src="img/app/4.jpg" alt="Item Details Screen">
+                </div>
+                <div class="screenshot">
+                    <img src="img/app/5.jpg" alt="Chat Screen">
+                </div>
+                <div class="screenshot">
+                    <img src="img/app/6.jpg" alt="Profile Screen">
+                </div>
+                <div class="screenshot">
+                    <img src="img/app/7.jpg" alt="Settings Screen">
+                </div>
+                <div class="screenshot">
+                    <img src="img/app/8.jpg" alt="Notifications Screen">
+                </div>
+                <div class="screenshot">
+                    <img src="img/app/8.jpg" alt="Notifications Screen">
+                </div>
+            </div>
+            <!-- Carousel scroll buttons (desktop/tablet) -->
+            <button class="carousel-btn left" aria-label="Scroll left">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="carousel-btn right" aria-label="Scroll right">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="screen">
+        <div class="download-circle">
+            <a href="files/LostnFound.apk" class="circle-download-btn">
+                <span>Download</span>
+                <span>APK</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Installation Guide Section -->
+    <section id="installation" class="screen">
+        <h2>Installation Guide</h2>
+        <div class="installation-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <p>Enable "Install from Unknown Sources" in your device settings</p>
+                <img src="img/app/1.jpg"
+                    alt="Enable Unknown Sources">
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <p>Download the APK file</p>
+                <img src="img/app/2.jpg"
+                    alt="Download APK">
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <p>Open the APK file</p>
+                <img src="img/app/3.jpg"
+                    alt="Open APK">
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <p>Tap "Install" when prompted</p>
+                <img src="img/app/4.jpg"
+                    alt="Install APK">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Section -->
+    <section id="tutorial" class="screen">
+        <h2>How to Use LostnFound</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="LostnFound Tutorial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 LostnFound| Made by LostnFound</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
